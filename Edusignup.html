@@ -1,0 +1,129 @@
+<html>
+<head>
+<title>The Shopping Place!</title>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+    background: #F2F2F2;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://i.pinimg.com/originals/35/9a/64/359a64c47968c24040bc239834105913.jpg');
+    background-repeat: no-repeat;
+    background-size: 1600px 720px;
+}
+.card{
+    width: 350px;
+    height: 500px;
+    perspective: 1000px;
+    border-style:groove;
+    border-color:BFBDBD;
+
+.inner-box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+}
+.card-front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image:url('https://i.pinimg.com/originals/35/9a/64/359a64c47968c24040bc239834105913.jpg');
+    padding: 55px;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+}
+.card h2{
+    font-weight: normal;
+    font-size: 24px;
+    text-align: center;
+    text-stroke: 10px red;
+    margin-bottom: 20px;
+}
+.input-box{
+    width: 100%;
+    background: transparent;
+    border: 1px solid #fff;
+    margin: 6px 0;
+    height: 32px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline: none;
+    text-align: center;
+    color:  #fff;
+}    
+button{
+    width: 100%;
+    background: transparent;
+    border: 1px solid #fff;
+    margin: 35px 0 10px;
+    height: 32px;
+    font-size: 12px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+}
+.submit-btn{
+    position: relative;
+}
+.submit-btn::after{
+    content: '\27a4';
+    color: #333;
+    line-height: 32px;
+    font-size: 17px;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    right: -1px;
+    top: -1px;
+}
+
+span{
+    font-size: 13px;
+    margin-left: 10px;
+}
+.card ,btn{
+    margin-top: 70px;
+}
+</style>
+      
+</head>
+<body>
+    <div class="container">
+    <div class="card">
+    <div class="inner-box" id="card">
+    <div class="card-front">
+        <h2>SIGNUP</h2>
+    <form action="/signup" method="post">
+        <input type="text" name="username" class="input-box" placeholder="Your Name" required>
+        <input type="tel" name="phnumber" class="input-box" placeholder="Your Phone number" pattern="[0-9]{10}" required>
+        <input type="email" name="email" class="input-box" placeholder="your Email Id " required>
+        <input type="password" name="password" class="input-box" placeholder="password" required>
+        <button type="submit" class="submit-btn" href="register"><b>submit</b></button>
+    </form>
+        </div>
+        </div>
+        </div>
+    </div>
+    </body>
+</html>
+    
