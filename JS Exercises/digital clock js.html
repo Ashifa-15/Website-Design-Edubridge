@@ -1,0 +1,19 @@
+<html>
+<body>
+<script>
+
+  var time = new Date();
+  var hour = time.getHours();
+  var minute = time.getMinutes();
+  var seconds = time.getSeconds();
+  var temp=" " + ((hour >12) ? hour - 12 : hour);
+  if(hour == 0)
+     temp = "12";
+  temp += ((minute < 10) ? ":0" : ":") + minute;
+  temp += ((seconds < 10) ? ":0" : ":") + seconds;
+  temp += ((hour >= 12) ? " P.M." : " A.M.");
+  document.write(temp);
+
+</script>
+</body>
+</html>

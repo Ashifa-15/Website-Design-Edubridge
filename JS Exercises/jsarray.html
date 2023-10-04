@@ -1,0 +1,40 @@
+<html>
+<body>
+<script>
+var fruits=["Apple","Banana","pappaya",4,true];
+document.writeln(fruits[fruits.length-1]+"<br/>");
+
+fruits.push("Orange");
+document.writeln(fruits+"<br/>");
+
+fruits.unshift("Mango");
+document.writeln(fruits+"<br/>");
+
+fruits.pop();
+document.writeln(fruits+"<br/>");
+
+fruits.shift();
+document.writeln(fruits+"<br/>");
+
+fruits.splice(3,2);
+document.writeln(fruits+"<br/>");
+ 
+fruits.splice(3,2,"jack fruit","lichie");
+document.writeln(fruits+"<br/>");
+
+fruits.splice(0,1);
+document.writeln(fruits+"<br/>");
+
+fruits.splice(0,1,"Custard Apple");
+document.writeln(fruits+"<br/>");
+
+document.writeln(fruits.slice(1,2)+"<br/>");
+
+var animals=["Tiger","Lion","giraffe"];
+var add=fruits.concat(animals);
+document.writeln(add+"<br/>");
+document.writeln(add.length);
+
+</script>
+</body>
+</html>
